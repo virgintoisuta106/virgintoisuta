@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Notation Scanner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu Bar -->
+  <div class="menu-bar">
+    <a href="#" onclick="fileMenu()">File</a>
+    <a href="#" onclick="editMenu()">Edit</a>
+    <a href="#" onclick="runCheck()">Run</a>
+    <a href="#" onclick="showAbout()">About</a>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h1>🔬 Scientific Notation Scanner</h1>
+      <h2>By Virgin Gabriela Toisuta</h2>
+      <h3>Nim 211011060077 </h3>
+      <p>Detektor Notasi Ilmiah (Scientific Notation)</p>
+    </div>
+
+    <div class="content">
+      <div class="input-group">
+        <input type="text" 
+               id="input" 
+               placeholder="Masukkan angka contoh: 6.022e23 atau -1.23E-4" 
+               autocomplete="off">
+        <button id="run-btn" onclick="runCheck()">Run</button>
+      </div>
+
+      <div id="result" class="result">
+        Masukkan angka lalu klik Run atau tekan Enter
+      </div>
+
+      <div class="example">
+        <strong>Contoh Valid:</strong><br>
+        1.23e4  •  6.022E23  •  -4.56e-10  •  9.81E+5  •  1.0e0
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
